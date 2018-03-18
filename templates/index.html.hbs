@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Presentation Manager</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/css/uikit.min.css" />
+    <script src="/js/uikit.min.js"></script>
+    <script src="/js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <div class="uk-section uk-height-viewport">
+      <nav class="uk-navbar uk-navbar-container uk-navbar-transparent uk-position-top">
+        <div class="uk-navbar-right">
+          <a href="#offcanvas-slide" class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-slide"></a>
+        </div>
+      </nav>
+      <div id="offcanvas-slide" uk-offcanvas="flip: true; overlay: true; mode: slide">
+        <div class="uk-offcanvas-bar">
+          <ul class="uk-nav uk-nav-default" uk-switcher="connect: #component-nav; animation: uk-animation-fade; toggle: > :not(.uk-nav-header)">
+            <li><a href="#">Home</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <ul id="component-nav" class="uk-switcher">
+          <li>
+            <div class="uk-card uk-card-body uk-card-default uk-card-small uk-position-center">
+              <form id="slides" action="/presentation" method="POST">
+                <fieldset class="uk-fieldset">
+                  <legend class="uk-legend">Presentation</legend>
+		  <label for="presentation" class="uk-form-label">Choose</label><br>
+                  <select name="slide_id" class="uk-select">
+                      {{ #each slides }}
+                          <option value="{{ id }}">{{ title }}</option>
+                      {{ /each }}
+                  </select><br>
+                  <input type="submit" value="Open" class="uk-button uk-button-default uk-align-center">
+                  </fieldset>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

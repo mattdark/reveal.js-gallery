@@ -1,0 +1,24 @@
+[package]
+name = "presentation-manager-rs"
+version = "0.1.0"
+authors = ["mattdark"]
+
+[dependencies]
+rocket = "0.3.6"
+rocket_codegen = "0.3.6"
+serde = "1.0"
+serde_derive = "1.0.3"
+serde_json = "1.0"
+handlebars = "0.28.2"
+
+[dependencies.rocket_contrib]
+version = "0.3.0"
+features = ["handlebars_templates"]
+
+[lib]
+name = "mylib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "mybin"
+path = "src/main.rs"
