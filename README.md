@@ -1,5 +1,4 @@
-# presentation-manager-rs
-## Manager for HTML5 Presentations - Rust
+# presentation-manager-rs - A manager for HTML5 Presentations, written in Rust
 
 ## How does it work?
 
