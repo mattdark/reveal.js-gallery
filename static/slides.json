@@ -1,44 +1,16 @@
 [
         {
             "id": "1",
-            "file": "mozillian-story.md",
-            "title": "What is it to be a Mozillian?",
-            "description": "My Mozillian Story",
-            "style": "mozilla.css"
+            "file": "presentation1.md",
+            "title": "Title Presentation 1",
+            "description": "Description Presentation 1",
+            "style": "black.css"
         },
         {
             "id": "2",
-            "file": "privacy-slides.md",
-            "title": "Why privacy matters?",
-            "description": "Learn about online privacy",
-            "style": "mozilla.css"
-        },
-        {
-            "id": "3",
-            "file": "rust-101.md",
-            "title": "Rust 101",
-            "description": "Introduction to Rust",
-            "style": "mozilla.css"
-        },
-        {
-            "id": "4",
-            "file": "why-free-software.md",
-            "title": "Why using Free Software?",
-            "description": "What is Free Software? and Why using it?",
-            "style": "black.css"
-        },
-        {
-            "id": "5",
-            "file": "learning-code.md",
-            "title": "Learning to code and not die trying",
-            "description": "Where to start if you want to learn a programming language",
-            "style": "black.css"
-        },
-        {
-            "id": "6",
-            "file": "python-101.md",
-            "title": "Python 101",
-            "description": "A quick introduction to Python",
-            "style": "black.css"
+            "file": "presentation2.md",
+            "title": "Title Presentation 2",
+            "description": "Description Presentation 2",
+            "style": "white.css"
         }
 ]
