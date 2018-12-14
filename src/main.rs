@@ -12,7 +12,7 @@ use std::path::{Path, PathBuf};
 use handlebars::{to_json};
 
 use rocket::response::NamedFile;
-use rocket_contrib::templates::(Template, handlebars);
+use rocket_contrib::templates::{Template, handlebars};
 use rocket::request::{Form};
 
 #[derive(FromForm)]
