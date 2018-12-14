@@ -4,17 +4,16 @@ version = "0.1.0"
 authors = ["mattdark"]
 
 [dependencies]
-rocket = "0.3.10"
-rocket_codegen = "0.3.10"
-crossbeam-deque = "0.3.1"
-serde = "1.0.45"
-serde_derive = "1.0.45"
-serde_json = "1.0.17"
-handlebars = "0.32.1"
-cookie = "0.10.1"
+rocket = "0.4"
+
+crossbeam-deque = "0.6.2"
+serde = "1.0.82"
+serde_derive = "1.0.82"
+serde_json = "1.0.33"
+handlebars = "1.1.0"
 
 [dependencies.rocket_contrib]
-version = "0.3.10"
+version = "0.4"
 features = ["handlebars_templates"]
 
 [lib]
