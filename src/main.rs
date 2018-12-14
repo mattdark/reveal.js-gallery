@@ -1,10 +1,9 @@
-#![feature(plugin, decl_macro, custom_derive)]
-#![plugin(rocket_codegen)]
+#![feature(proc_macro_hygiene, decl_macro)]
+
+#[macro_use] extern crate rocket;
 
 extern crate rocket_contrib;
-extern crate rocket;
 extern crate mylib;
-extern crate handlebars;
 
 use mylib::list_slides;
 
@@ -13,7 +12,7 @@ use std::path::{Path, PathBuf};
 use handlebars::{to_json};
 
 use rocket::response::NamedFile;
-use rocket_contrib::Template;
+use rocket_contrib::templates::(Template, handlebars);
 use rocket::request::{Form};
 
 #[derive(FromForm)]
