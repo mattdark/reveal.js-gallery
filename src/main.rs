@@ -22,13 +22,13 @@ struct Slide{
 
 #[get("/")]
 fn index() -> Template {
-    let s = list_slides();
+    let s = get_slides();
     let mut slides = HashMap::new();
     slides.insert("slides".to_string(), to_json(&s));
     Template::render("index", &slides)
 }
 
-#[get("/<file..>")]
+#[get("/<file..>", rank=3)]
 fn files(file: PathBuf) -> Option<NamedFile> {
     NamedFile::open(Path::new("static/").join(file)).ok()
 }
@@ -37,18 +37,31 @@ fn files(file: PathBuf) -> Option<NamedFile> {
 fn presentation(slide: Form<Slide>) -> Template {
     let input: Slide = slide.into_inner();
     let id: usize = input.slide_id - 1;
-    let s = list_slides();
-    let slide = &s[id];
-    let mut slides = HashMap::new();
-    slides.insert("title", &slide.title);
-    slides.insert("description", &slide.description);
-    slides.insert("style", &slide.style);
-    slides.insert("file", &slide.file);
-    Template::render("presentation", &slides)
+    let s = get_slides();
+    let s = &s[id];
+    let mut slide = HashMap::new();
+    slide.insert("title", &s.title);
+    slide.insert("description", &s.description);
+    slide.insert("style", &s.style);
+    slide.insert("file", &s.file);
+    Template::render("presentation", &slide)
+}
+
+#[get("/presentation/<slide_id>", rank=2)]
+fn get_presentation(slide_id: usize) -> Template {
+    let id: usize = slide_id - 1;
+    let s = get_slides();
+    let s = &s[id];
+    let mut slide = HashMap::new();
+    slide.insert("title", &s.title);
+    slide.insert("description", &s.description);
+    slide.insert("style", &s.style);
+    slide.insert("file", &s.file);
+    Template::render("presentation", &slide)
 }
 
 fn rocket() -> rocket::Rocket {
-    rocket::ignite().mount("/", routes![index, files, presentation])
+    rocket::ignite().mount("/", routes![index, presentation, get_presentation, files])
     .attach(Template::fairing())
 }
 
