@@ -4,13 +4,15 @@
             "file": "presentation1.md",
             "title": "Title Presentation 1",
             "description": "Description Presentation 1",
-            "style": "black.css"
+            "style": "black.css",
+            "url": "slide1"
         },
         {
             "id": "2",
             "file": "presentation2.md",
             "title": "Title Presentation 2",
             "description": "Description Presentation 2",
-            "style": "white.css"
+            "style": "white.css",
+            "url": "slide2"
         }
 ]
