@@ -5,7 +5,7 @@
 extern crate rocket_contrib;
 extern crate mylib;
 
-use mylib::list_slides;
+use mylib::get_slides;
 
 use std::collections::HashMap;
 use std::path::{Path, PathBuf};
