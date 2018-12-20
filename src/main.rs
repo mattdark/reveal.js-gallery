@@ -12,12 +12,13 @@ use std::path::{Path, PathBuf};
 use handlebars::{to_json};
 
 use rocket::response::NamedFile;
+use rocket::response::Redirect;
 use rocket_contrib::templates::{Template, handlebars};
 use rocket::request::{Form};
 
 #[derive(FromForm)]
 struct Slide{
-    slide_id: usize,
+    path: String,
 }
 
 #[get("/")]
@@ -34,23 +35,22 @@ fn files(file: PathBuf) -> Option<NamedFile> {
 }
 
 #[post("/presentation", data = "<slide>")]
-fn presentation(slide: Form<Slide>) -> Template {
-    let input: Slide = slide.into_inner();
-    let id: usize = input.slide_id - 1;
-    let s = get_slides();
-    let s = &s[id];
-    let mut slide = HashMap::new();
-    slide.insert("title", &s.title);
-    slide.insert("description", &s.description);
-    slide.insert("style", &s.style);
-    slide.insert("file", &s.file);
-    Template::render("presentation", &slide)
+fn presentation(slide: Form<Slide>) -> Redirect {
+    let path = slide.into_inner().path;
+    Redirect::to(format!("/presentation/{}", path))
 }
 
-#[get("/presentation/<slide_id>", rank=2)]
-fn get_presentation(slide_id: usize) -> Template {
-    let id: usize = slide_id - 1;
+#[get("/presentation/<url>", rank=2)]
+fn get_presentation(url: String) -> Template {
     let s = get_slides();
+    let mut id: usize = 0;
+    while id < s.len() {
+        let u = &s[id].url.to_string();
+        if u == url.trim() {
+            break;
+        }
+        id += 1;
+    }
     let s = &s[id];
     let mut slide = HashMap::new();
     slide.insert("title", &s.title);
