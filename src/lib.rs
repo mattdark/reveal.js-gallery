@@ -16,7 +16,7 @@ pub struct Slides {
     pub style: String,
 }
 
-pub fn list_slides() -> Vec<Slides> {
+pub fn get_slides() -> Vec<Slides> {
     let file = File::open("static/slides.json").unwrap(); 
     let reader = BufReader::new(file);
     let slides: Vec<Slides> = serde_json::from_reader(reader).unwrap();
