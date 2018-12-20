@@ -14,6 +14,7 @@ pub struct Slides {
     pub title: String,
     pub description: String,
     pub style: String,
+    pub url: String,
 }
 
 pub fn get_slides() -> Vec<Slides> {
