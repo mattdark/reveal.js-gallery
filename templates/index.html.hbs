@@ -32,9 +32,9 @@
                 <fieldset class="uk-fieldset">
                   <legend class="uk-legend">Presentation</legend>
 		  <label for="presentation" class="uk-form-label">Choose</label><br>
-                  <select name="slide_id" class="uk-select">
+                  <select name="path" class="uk-select">
                       {{ #each slides }}
-                          <option value="{{ id }}">{{ title }}</option>
+                          <option value="{{ url }}">{{ title }}</option>
                       {{ /each }}
                   </select><br>
                   <input type="submit" value="Open" class="uk-button uk-button-default uk-align-center">
