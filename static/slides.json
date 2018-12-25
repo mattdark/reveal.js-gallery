@@ -5,7 +5,8 @@
             "title": "Title Presentation 1",
             "description": "Description Presentation 1",
             "style": "black.css",
-            "url": "slide1"
+            "url": "slide1",
+	    "screenshot": "/img/screenshot/presentation1.png"
         },
         {
             "id": "2",
@@ -13,6 +14,7 @@
             "title": "Title Presentation 2",
             "description": "Description Presentation 2",
             "style": "white.css",
-            "url": "slide2"
+            "url": "slide2",
+	    "screenshot": "/img/screenshot/presentation2.png"
         }
 ]
