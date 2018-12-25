@@ -9,7 +9,7 @@ use mylib::get_slides;
 
 use std::collections::HashMap;
 use std::path::{Path, PathBuf};
-use handlebars::{to_json};
+use crate::handlebars::{to_json};
 
 use rocket::response::NamedFile;
 use rocket::response::Redirect;
