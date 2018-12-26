@@ -72,6 +72,8 @@ cargo run --release
 
 Now open http://localhost:8000 in your favorite browser (I recommend Firefox).
 
+You can also access your presentation by writing the full path in the address bar (i.e. http://localhost:8000/presentation/slide1).
+
 ## Built With
 
 * [Rust](http://rust-lang.org/) - The programming language
