@@ -42,7 +42,7 @@ sh installer.sh
 
 1. Create a Markdown file with the content of your presentation, assign a name that identifies it and save it in /static/slides. There are two examples in that directory.
 
-* Note: ```---``` is use as horizontal separator and ```----``` as vertical one.
+* Note: ```---``` is used as horizontal separator and ```----``` as vertical one.
 
 2. Use reveal.js themes or create your own and put it in /static/reveal.js/css/theme.
 
