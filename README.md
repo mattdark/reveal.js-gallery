@@ -4,6 +4,16 @@
 
 ![reveal.js Gallery index](https://github.com/mattdark/reveal.js-gallery/raw/screenshots/screenshot/reveal.js-gallery.png "reveal.js Gallery")
 
+## Features
+
+1. Individual URL. You can access a presentation by writing its URL in the address bar on your favorite browser (http://localhost:8000/presentation/slide1).
+
+2. Individual theme. Use a different theme for every presentation in your gallery.
+
+3. Speaker notes. Support for speaker notes was added. Press 's' on your keyboard to open speaker notes window.
+
+4. Multiplexing. It's one of the plugins I like the most from reveal.js and it was tested within the gallery app. Instructions will be added soon.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
