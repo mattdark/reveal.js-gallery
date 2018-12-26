@@ -94,4 +94,5 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
+* UI based on UIKit templates by [KickOff](https://github.com/zzseba78/Kick-Off)
 
