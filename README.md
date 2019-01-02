@@ -6,7 +6,7 @@
 
 ## Features
 
-1. Individual URL. You can access a presentation by writing its URL in the address bar on your favorite browser (http://localhost:8000/presentation/slide1).
+1. Individual URL. You can access a presentation by writing its URL in the address bar on your favorite browser (e.g. http://localhost:8000/presentation/slide1).
 
 2. Individual theme. Use a different theme for every presentation in your gallery.
 
@@ -82,7 +82,7 @@ cargo run --release
 
 Now open http://localhost:8000 in your favorite browser (I recommend Firefox).
 
-You can also access your presentation by writing the full path in the address bar (i.e. http://localhost:8000/presentation/slide1).
+You can also access your presentation by writing the full path in the address bar (e.g. http://localhost:8000/presentation/slide1).
 
 ## Built With
 
