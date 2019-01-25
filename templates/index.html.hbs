@@ -50,7 +50,7 @@
 				</div>
 				<div class="left-content-box  content-box-dark">
 					<img src="/img/avatar.svg" alt="" class="uk-border-circle profile-img">
-					<h4 class="uk-text-center uk-margin-remove-vertical text-light">John Doe</h4>
+					<h4 class="uk-text-center uk-margin-remove-vertical text-light">{{ name }}</h4>
 					
 					
 				</div>
@@ -58,10 +58,12 @@
 				<div class="left-nav-wrap">
 					<ul class="uk-nav uk-nav-default uk-nav-parent-icon" data-uk-nav>
 						<li class="uk-nav-header">SOCIAL</li>
-						<li><a href="https://fb.com/#"><span data-uk-icon="icon: facebook" class="uk-margin-small-right"></span>Facebook</a></li>
-						<li><a href="https://twitter.com/#"><span data-uk-icon="icon: twitter" class="uk-margin-small-right"></span>Twitter</a></li>
-						<li><a href="https://linkedin.com/in/#"><span data-uk-icon="icon: linkedin" class="uk-margin-small-right"></span>LinkedIn</a></li>
-						<li><a href="https://github.com/#"><span data-uk-icon="icon: github" class="uk-margin-small-right"></span>GitHub</a></li>
+						{{ #each social }}
+						  <li><a href="https://fb.com/{{ facebook }}"><span data-uk-icon="icon: facebook" class="uk-margin-small-right"></span>Facebook</a></li>
+						  <li><a href="https://twitter.com/{{ twitter }}"><span data-uk-icon="icon: twitter" class="uk-margin-small-right"></span>Twitter</a></li>
+						  <li><a href="https://linkedin.com/in/{{ linkedin }}"><span data-uk-icon="icon: linkedin" class="uk-margin-small-right"></span>LinkedIn</a></li>
+						  <li><a href="https://github.com/{{ github }}"><span data-uk-icon="icon: github" class="uk-margin-small-right"></span>GitHub</a></li>
+						{{ /each }}
 					</ul>
 				</div>
 				<div class="bar-bottom">
