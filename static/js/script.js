@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded',function() {
 function changeEventHandler(event) {
   url = event.target.value
   if(url) {
-    $.getJSON("slides.json", function(json) {
+    $.getJSON("data/slides.json", function(json) {
       id = json.find(x => x.url == url).id
       info = document.getElementById("slide_info");
       info.style.display = 'block'
