@@ -33,7 +33,7 @@ pub fn get_slides() -> Vec<Slides> {
 }
 
 pub fn get_social() -> Vec<Social> {
-    let file = File::open("static/data/contact.json").unwrap();
+    let file = File::open("static/data/social.json").unwrap();
     let reader = BufReader::new(file);
     let social: Vec<Social> = serde_json::from_reader(reader).unwrap();
     social
