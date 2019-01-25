@@ -1,6 +1,6 @@
 [package]
-name = "presentation-manager-rs"
-version = "0.1.0"
+name = "reveal-js-gallery"
+version = "0.2.0"
 authors = ["mattdark"]
 edition = '2018'
 
@@ -20,5 +20,5 @@ name = "mylib"
 path = "src/lib.rs"
 
 [[bin]]
-name = "presman"
+name = "gallery-app"
 path = "src/main.rs"
