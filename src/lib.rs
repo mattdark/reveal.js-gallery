@@ -16,9 +16,25 @@ pub struct Slides {
     pub url: String,
 }
 
+#[derive(Serialize, Deserialize, Debug)]
+pub struct Social {
+    pub name: String,
+    pub facebook: String,
+    pub twitter: String,
+    pub linkedin: String,
+    pub github: String,
+}
+
 pub fn get_slides() -> Vec<Slides> {
     let file = File::open("static/slides.json").unwrap(); 
     let reader = BufReader::new(file);
     let slides: Vec<Slides> = serde_json::from_reader(reader).unwrap();
     slides
+}
+
+pub fn get_social() -> Vec<Social> {
+    let file = File::open("static/data/contact.json").unwrap();
+    let reader = BufReader::new(file);
+    let social: Vec<Social> = serde_json::from_reader(reader).unwrap();
+    social
 }
