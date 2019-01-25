@@ -6,6 +6,7 @@ extern crate rocket_contrib;
 extern crate mylib;
 
 use mylib::get_slides;
+use mylib::get_social;
 
 use std::collections::HashMap;
 use std::path::{Path, PathBuf};
@@ -24,9 +25,13 @@ struct Slide{
 #[get("/")]
 fn index() -> Template {
     let s = get_slides();
-    let mut slides = HashMap::new();
-    slides.insert("slides".to_string(), to_json(&s));
-    Template::render("index", &slides)
+    let c = get_social();
+    let name = "John Doe";
+    let mut data = HashMap::new();
+    data.insert("slides".to_string(), to_json(&s));
+    data.insert("name".to_string(), to_json(&name));
+    data.insert("social".to_string(), to_json(&c));
+    Template::render("index", &data)
 }
 
 #[get("/<file..>", rank=3)]
