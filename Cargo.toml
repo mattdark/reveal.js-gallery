@@ -1,6 +1,6 @@
 [package]
 name = "reveal-js-gallery"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["mattdark"]
 edition = '2018'
 
@@ -20,5 +20,5 @@ name = "mylib"
 path = "src/lib.rs"
 
 [[bin]]
-name = "gallery-app"
+name = "reveal-gallery"
 path = "src/main.rs"
