@@ -1,8 +1,8 @@
 # reveal.js Gallery
 
-[reveal.js](https://revealjs.com/) is a framework for creating presentations using HTML. It's an alternative to Microsoft Powerpoint or LibreOffice Impress but using a text editor and any browser. reveal.js Gallery exists as a way to better organize and access all of your presentations from one place. Created using [Rust](https://rust-lang.org), [Rocket](https://rocket.rs/) & [UIKit](https://getuikit.com/).
+[reveal.js](https://revealjs.com/) is a framework for creating presentations using HTML. It's an alternative to Microsoft Powerpoint or LibreOffice Impress but using a text editor and any browser. reveal.js Gallery exists as a way to better organize and access all of your presentations from one place. Created using [Rust](https://rust-lang.org), [Rocket](https://rocket.rs/) & [Material Kit](https://www.creative-tim.com/product/material-kit).
 
-![reveal.js Gallery index](https://github.com/mattdark/reveal.js-gallery/raw/screenshots/screenshot/reveal.js-gallery.png "reveal.js Gallery")
+![reveal.js Gallery index](https://github.com/mattdark/reveal.js-gallery/raw/screenshots/screenshot/reveal.js-gallery-0.3.png "reveal.js Gallery")
 
 ## Features
 
@@ -104,5 +104,5 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
-* UI based on UIKit templates by [KickOff](https://github.com/zzseba78/Kick-Off)
+* UI based on [Material Kit](https://www.creative-tim.com/product/material-kit) by [Creative Tim](https://www.creative-tim.com/)
 
