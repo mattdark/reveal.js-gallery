@@ -89,7 +89,7 @@ You can also access your presentation by writing the full path in the address ba
 * [Rust](http://rust-lang.org/) - The programming language
 * [Rocket](https://rocket.rs/) - The web framework
 * [reveal.js](https://revealjs.com/) - The presentation framework
-* [UIKit](https://getuikit.com/) - The frontend framework
+* [Material Kit](https://www.creative-tim.com/product/material-kit/) - The UI kit
 
 ## Contributing
 
