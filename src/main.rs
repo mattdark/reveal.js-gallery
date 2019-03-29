@@ -26,10 +26,8 @@ struct Slide{
 fn index() -> Template {
     let s = get_slides();
     let c = get_social();
-    let name = "John Doe";
     let mut data = HashMap::new();
     data.insert("slides".to_string(), to_json(&s));
-    data.insert("name".to_string(), to_json(&name));
     data.insert("social".to_string(), to_json(&c));
     Template::render("index", &data)
 }
