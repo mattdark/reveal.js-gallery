@@ -6,7 +6,7 @@ extern crate rocket_contrib;
 extern crate mylib;
 
 use mylib::get_slides;
-use mylib::get_social;
+use mylib::get_profile;
 
 use std::collections::HashMap;
 use std::path::{Path, PathBuf};
