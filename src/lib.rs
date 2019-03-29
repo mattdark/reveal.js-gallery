@@ -17,8 +17,10 @@ pub struct Slides {
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct Social {
+pub struct Profile {
     pub name: String,
+    pub profile_picture: String,
+    pub bio: String,
     pub facebook: String,
     pub twitter: String,
     pub linkedin: String,
@@ -32,9 +34,9 @@ pub fn get_slides() -> Vec<Slides> {
     slides
 }
 
-pub fn get_social() -> Vec<Social> {
-    let file = File::open("static/data/social.json").unwrap();
+pub fn get_profile() -> Vec<Profile> {
+    let file = File::open("static/data/profile.json").unwrap();
     let reader = BufReader::new(file);
-    let social: Vec<Social> = serde_json::from_reader(reader).unwrap();
-    social
+    let profile: Vec<Profile> = serde_json::from_reader(reader).unwrap();
+    profile
 }

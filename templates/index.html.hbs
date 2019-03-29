@@ -74,10 +74,10 @@
               <div class="tab-content">
                 <div class="tab-pane active" id="profile">
                   <div class="row">
-                    <div class="col-lg-5 profile-text">
-                      {{ #each social }}
+                    {{ #each profile }}
+                      <div class="col-lg-5 profile-text">
                         <h1>{{ name }}</h1>
-                        <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis varius maximus purus, non semper justo ultricies semper. Nullam in ipsum a augue consequat scelerisque ac sit amet sapien. Etiam id imperdiet ante, non rhoncus purus. Praesent vitae ligula lacus. Integer ut vehicula lorem, vitae sollicitudin leo. Aenean non arcu ornare, lobortis dolor ut, dictum arcu. Cras posuere, neque quis cursus posuere, sem nulla dapibus erat, at gravida mauris dui sit amet velit.
+                        <p style="text-align: justify;">{{ bio }}
                         </p>
                         <div>
                           <a target="_blank" href="https://facebook.com/{{ facebook }}" class="btn btn-info btn-round" data-toggle="tooltip" data-original-title="Facebook">
@@ -93,11 +93,11 @@
                             <i class="fa fa-github"></i>
                           </a>
                         </div>
-                      {{ /each }}
-                    </div>
-                    <div class="col-lg-5 ml-auto mr-auto">
-                      <img src="./img/profile.jpg" alt="Profile picture" class="img-raised rounded-circle img-fluid">
-                    </div>
+                      </div>
+                      <div class="col-lg-5 ml-auto mr-auto">
+                        <img src="./img/{{ profile_picture }}" alt="Profile picture" class="img-raised rounded-circle img-fluid">
+                      </div>
+                    {{ /each }}
                   </div>
                 </div>
                 <div class="tab-pane" id="slides">

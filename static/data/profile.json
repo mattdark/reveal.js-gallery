@@ -1,0 +1,11 @@
+[
+        {
+            "name": "John Doe",
+            "profile_picture": "christian.jpg"
+            "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis varius maximus purus, non semper justo ultricies semper. Nullam in ipsum a augue consequat scelerisque ac sit amet sapien. Etiam id imperdiet ante, non rhoncus purus. Praesent vitae ligula lacus. Integer ut vehicula lorem, vitae sollicitudin leo. Aenean non arcu ornare, lobortis dolor ut, dictum arcu. Cras posuere, neque quis cursus posuere, sem nulla dapibus erat, at gravida mauris dui sit amet velit.",
+            "facebook": "#",
+            "twitter": "#",
+            "linkedin": "#",
+            "github": "#"
+        }
+]
