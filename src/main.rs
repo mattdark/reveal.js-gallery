@@ -25,10 +25,10 @@ struct Slide{
 #[get("/")]
 fn index() -> Template {
     let s = get_slides();
-    let c = get_social();
+    let p = get_profile();
     let mut data = HashMap::new();
     data.insert("slides".to_string(), to_json(&s));
-    data.insert("social".to_string(), to_json(&c));
+    data.insert("profile".to_string(), to_json(&p));
     Template::render("index", &data)
 }
 
