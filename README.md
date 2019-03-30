@@ -29,7 +29,7 @@ curl https://sh.rustup.rs -sSf | sh
 
 for any other operating system go to [rustup.rs](https://rustup.rs/)
 
-This project was build using Rocket which is a web framework written in Rust and it uses the nightly version of the language.
+This project was built using Rocket which is a web framework written in Rust and it uses the nightly version of the language.
 
 * Install Rust nightly:
 
