@@ -5,7 +5,7 @@ revealjs_repo=hakimel/reveal.js
 dir=static
 
 get_revealjs() {
-    git clone https://github.com/$revealjs_repo.git $dir/reveal.js
+    git clone https://github.com/$1.git $dir/reveal.js
 }
 
 get_revealjs $revealjs_repo
