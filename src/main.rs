@@ -58,7 +58,7 @@ fn get_presentation(url: String) -> Template {
     let mut slide = HashMap::new();
     slide.insert("title", &s.title);
     slide.insert("description", &s.description);
-    slide.insert("style", &s.style);
+    slide.insert("theme", &s.theme);
     slide.insert("file", &s.file);
     Template::render("presentation", &slide)
 }

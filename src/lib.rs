@@ -12,7 +12,7 @@ pub struct Slides {
     pub file: String,
     pub title: String,
     pub description: String,
-    pub style: String,
+    pub theme: String,
     pub url: String,
 }
 

@@ -4,7 +4,7 @@
             "file": "presentation1.md",
             "title": "Title Presentation 1",
             "description": "Description Presentation 1",
-            "style": "black.css",
+            "theme": "black.css",
             "url": "slide1",
 	    "screenshot": "/img/screenshot/presentation1.png"
         },
@@ -13,7 +13,7 @@
             "file": "presentation2.md",
             "title": "Title Presentation 2",
             "description": "Description Presentation 2",
-            "style": "white.css",
+            "theme": "white.css",
             "url": "slide2",
 	    "screenshot": "/img/screenshot/presentation2.png"
         }
