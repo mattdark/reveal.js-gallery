@@ -1,0 +1,10 @@
+[global]
+limits = { json = 32768 }
+
+[development]
+base_url = "http://127.0.0.1:8000"
+
+[staging]
+
+[production]
+base_url = "https://reveal-gallery.herokuapp.com"
