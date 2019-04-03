@@ -12,5 +12,5 @@ port = 8000
 log = "normal"
 
 [production]
-address = "https://reveal-gallery.herokuapp.com"
+base_url = "https://reveal-gallery.herokuapp.com"
 log = "critical"
