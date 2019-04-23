@@ -1,8 +1,8 @@
 FROM rustlang/rust:nightly
 
-ADD . /home
-RUN git clone https://github.com/mattdark/reveal.js-gallery.git /home/reveal.js-gallery
-RUN cd /home/reveal.js-gallery
+WORKDIR /home
+RUN git clone https://github.com/mattdark/reveal.js-gallery.git
+RUN cd reveal.js-gallery
 RUN cargo build
 
 EXPOSE 8000
