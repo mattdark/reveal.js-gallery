@@ -2,9 +2,9 @@ FROM rustlang/rust:nightly
 
 WORKDIR /home
 RUN git clone https://github.com/mattdark/reveal.js-gallery.git
-RUN cd reveal.js-gallery
-RUN cargo build
+&& cd reveal.js-gallery
+&& cargo build
 
 EXPOSE 8000
 
-CMD ["./reveal-gallery"]
+CMD ["/home/reveal.js-gallery/reveal-gallery"]
