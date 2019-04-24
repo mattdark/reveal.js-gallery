@@ -1,0 +1,11 @@
+language: rust
+rust:
+  - nightly
+cache: cargo
+
+services:
+  - docker
+
+before_install:
+- docker pull mattdark/reveal.js-gallery
+- docker run -it -p 8000 mattdark/reveal.js-gallery
