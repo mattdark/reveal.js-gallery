@@ -5,4 +5,4 @@ RUN git clone https://github.com/mattdark/reveal.js-gallery.git && cd reveal.js-
 
 EXPOSE 8000
 
-CMD ["/home/reveal.js-gallery/reveal-gallery"]
+CMD ["/home/reveal-gallery"]
