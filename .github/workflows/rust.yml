@@ -9,6 +9,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - uses: mattdark/rust-action@master
     - name: Build
       run: cargo build --verbose
     - name: Run tests
