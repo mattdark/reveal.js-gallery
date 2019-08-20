@@ -9,10 +9,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Rust Action
     - uses: mattdark/rust-action@master
-    - name: Nightly
-    - run: rustup override set nightly
     - name: Build
       run: cargo build --verbose
     - name: Run tests
