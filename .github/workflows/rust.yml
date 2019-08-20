@@ -9,7 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: actions/rust@nightly
+    - name: Rust Action
+    - uses: icepuma/rust-action@1.37.0
     - name: Build
       run: cargo build --verbose
     - name: Run tests
