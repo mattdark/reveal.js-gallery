@@ -6,10 +6,15 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+      strategy:
+        ubuntu:
+          rust: [nightly]
 
     steps:
-    - uses: actions/checkout@v1
     - uses: mattdark/rust-action@master
+      with:
+        rust-version: ubuntu.rust
+    - uses: actions/checkout@v1
     - name: Build
       run: cargo build --verbose
     - name: Run tests
