@@ -1,3 +1,5 @@
+### This repository has been moved to [gitlab.com/mattdark/reveal-js-gallery](https://gitlab.com/mattdark/reveal.js-gallery) 
+
 # reveal.js Gallery [![Build Status](https://travis-ci.org/mattdark/reveal.js-gallery.svg?branch=master)](https://travis-ci.org/mattdark/reveal.js-gallery)
 
 [reveal.js](https://revealjs.com/) is a framework for creating presentations using HTML. It's an alternative to Microsoft Powerpoint or LibreOffice Impress but using a text editor and any browser. reveal.js Gallery exists as a way to better organize and access all of your presentations from one place. Created using [Rust](https://rust-lang.org), [Rocket](https://rocket.rs/) & [Material Kit](https://www.creative-tim.com/product/material-kit).
